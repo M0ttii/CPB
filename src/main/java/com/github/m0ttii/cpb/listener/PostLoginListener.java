@@ -43,13 +43,13 @@ public class PostLoginListener implements Listener {
                 CPB.getInstance().getProxy().getPluginManager().dispatchCommand(CPB.getInstance().getProxy().getConsole(), this.command
                         .replace("{player", player.getName())
                         .replace("{uuid}", uuid.toString())
-                        .replace("value", playervalue.toString()));
+                        .replace("{value}", playervalue.toString()));
                 return;
             }
             event.getPlayer().disconnect(this.denymessage
                     .replace("{player", player.getName())
                     .replace("{uuid}", uuid.toString())
-                    .replace("value", playervalue.toString()));
+                    .replace("{value}", playervalue.toString()));
         }
     }
 }

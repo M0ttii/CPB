@@ -1,14 +1,14 @@
 intave-id:
 
 #Global cheat-value to not allow the player to join.
-#10 = 10% ; 9 = 90% ; Only whole numbers
+#10 = 100% ; 9 = 90% ; Only integer values
 value: 10
+
+#Set to true if you want a command to be executed
+execute-command: false
+#Same placeholders as above
+command: "/ban {player} You have reached the cheat-value limit"
 
 #Kick message to the player. Use \n to start a new line.
 #Placeholders: {player} [uuid} {value}
 deny-message: "§cIntave \n\n §"
-
-
-execute-command: false
-#Same placeholders as above
-command: "/ban {player} You have reached the cheat-value limit"
